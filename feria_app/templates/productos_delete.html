@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<main>
+    <div class="main-color-productos">
+        <h1>Estas seguro ue deseas borrar este vino?</h1>
+        <h2>{{producto.nombre}}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="Borrar Producto" value="{{ tipo }}" />
+        </form>
+
+        <a href="{% url 'productos:all' %}">Cancelar</a>
+    </div>
+</main>
+{% endblock %}

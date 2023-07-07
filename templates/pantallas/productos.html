@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+      <br>
+      <h2>Productos de la Feria</h2>
+
+   
+
+  
+      </nav> 
+    </header>
+  
+    <main>
+
+      <div id="conteItemscarrousel">
+        
+        <div class="itemCarrousel" id="itemCarrousel-1"> 
+          <div class="tarjetaCarrousel" id="tarjetaCarrousel-1">
+            <img src=".././imagenes/Stan de dulces.jpg" alt="item-1-carrousel">
+          </div>
+          <div class="flechasCarrousel">
+              <a href="#itemCarrousel-3">
+                <i class="fa-solid fa-arrow-left"></i></a>
+              <a href="#itemCarrousel-2">
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+              </a>
+          </div> 
+        </div>
+          
+        <div class="itemCarrousel" id="itemCarrousel-2"> 
+            <div class="tarjetaCarrousel" id="tarjetaCarrousel-2">
+                <img src=".././imagenes/zapallitos.jpg" alt="item-2-carrousel"> 
+            </div>
+            <div class="flechasCarrousel">
+                <a href="#itemCarrousel-1">
+                  <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#itemCarrousel-3">
+                  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div> 
+
+        <div class="itemCarrousel" id="itemCarrousel-3"> 
+            <div class="tarjetaCarrousel" id="tarjetaCarrousel-3">
+                <img src=".././imagenes/pollo.jpg" alt="item-3-carrousel">
+            </div>
+            <div class="flechasCarrousel">
+                <a href="#itemCarrousel-2">
+                  <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#itemCarrousel-1">
+                  <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>  
+        </div><br><br>
+      </div> 
+      <h3 > <p align="center" style="color:black">Estos son algunos de nuestros productos naturales, sin contaminantes, de produccion propia, que comercializamos en la Feria de Empedrado. </p>   </h3>
+      
+    </main>  
+        
+    {% endblock %}

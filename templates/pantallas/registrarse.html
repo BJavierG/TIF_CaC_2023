@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+  <br>  
+    <section class="formulario">
+        <h2>Formulario de registro</h2>
+        <form>
+            <label for="firstname">Nombre:</label> <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..."required><br><br>
+            <label for="lastname">Apellido:</label> <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..."required><br><br>
+            <label for="email">e-mail:</label> <input type="email" name="email" placeholder="Ingrese su email"required><br><br>
+            <label for="street">Direccion:</label> <input type="text" name="street" placeholder="Ingrese su calle aqui..."required><br><br>
+            <label for="city">Ciudad:</label> <input type="text" name="city" placeholder="Ingrese ciudad aqui..."required><br><br>
+            <label for="zipcode">Codigo postal:</label> <input type="text" name="zipcode" placeholder="Ingrese codigo postal..."required><br><br>
+            <label for="birthDate">Fecha de nacimiento (dd/mm/yyyy):</label> <input type="date" name="birthDate" placeholder="dd/mm/yyyy"required><br><br>
+            
+            <p>
+                Genero:
+                <input type="radio" name="gender" value="Hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer">Mujer
+                <input type="radio" name="gender" value="Otro">Otro
+            </p>
+            <p>
+                Estudios:
+                <input type="checkbox" name="estudio" value="primario" display="block">Primarios
+                <input type="checkbox" name="estudio" value="secundario">Secundarios
+                <input type="checkbox" name="estudio" value="terciario">Terciarios
+                <input type="checkbox" name="estudio" value="universitario">Universitarios
+                <input type="checkbox" name="estudio" value="otro">Otro
+            </p>
+            <input type="submit"value="Enviar">
+        </form>
+
+        
+    </section>
+</main>  
+
+{% endblock %}
