@@ -21,7 +21,7 @@ class Product {
   constructor(articulo, precio, img) {
     this.articulo = articulo;
     this.precio = precio;
-    this.img = "{% static 'img' %}";
+    this.img = img;
   }
 
   getDivCardProduct(idToInsert) {
@@ -31,7 +31,7 @@ class Product {
       <center>
         <h4>${this.articulo}</h4>
         <div>
-          <img src="${this.img}" alt="${this.articulo}" />
+          <img src="/statics${this.img}" alt="${this.articulo}" />
           <h5>${this.precio}</h5>
         </div>
       </center>`;
