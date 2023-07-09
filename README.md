@@ -27,13 +27,11 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
 2. Crea un entorno virtual e instala las dependencias necesarias utilizando el comando `pip install -r requirements.txt`.
 
-3. Configura la base de datos en el archivo `settings.py`. Asegúrate de tener una base de datos configurada y actualiza las credenciales de conexión según sea necesario.
+3. Ejecuta las migraciones para crear las tablas en la base de datos utilizando el comando `python manage.py migrate`.
 
-4. Ejecuta las migraciones para crear las tablas en la base de datos utilizando el comando `python manage.py migrate`.
+4. Inicia el servidor de desarrollo con el comando `python manage.py runserver`.
 
-5. Inicia el servidor de desarrollo con el comando `python manage.py runserver`.
-
-6. Abre tu navegador web y visita `http://localhost:8000` para acceder a la aplicación.
+5. Abre tu navegador web y visita `http://localhost:8000` para acceder a la aplicación.
 
 ## Contribuciones
 
