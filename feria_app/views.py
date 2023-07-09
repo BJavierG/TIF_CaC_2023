@@ -31,6 +31,7 @@ class ProductoCreateView(ProductoBaseView, CreateView):
     extra_context = {
         "tipo" : "Crear Producto"
     }
+    succes_url = reverse_lazy("productos:all")
 
 class ProductoUpdateView(ProductoBaseView, UpdateView):
 
@@ -38,10 +39,12 @@ class ProductoUpdateView(ProductoBaseView, UpdateView):
     extra_context = {
         "tipo" : "Actualizar Producto"
     }
-
+    succes_url = reverse_lazy("productos:all")
+    
 class ProductoDeleteView(ProductoBaseView, DeleteView):
 
     template_name = "productos_delete.html"
     extra_context = {
         "tipo" : "Borrar Producto"
     }
+    success_url = reverse_lazy("productos:all")

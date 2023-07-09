@@ -1,16 +1,17 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 
 <main>
     <div class="main-color-productos">
-        <h1>Estas seguro ue deseas borrar este vino?</h1>
-        <h2>{{producto.articulo}}</h2>
+        <h2>BORRAR PRODUCTO</h2>
         <form method="post">
             {% csrf_token %}
-            <div>{{form.as_p}}</div>
-            <input type="Borrar Producto" value="{{ tipo }}" />
+            <p>¿Estás seguro de que deseas borrar este producto?</p>
+            <div>{{ producto.articulo }}</div>
+            <input type="submit" value="Borrar Producto" />
         </form>
 
-        <a href="{% url 'productos:all' %}">Cancelar</a>
+        <a href="{% url 'productos:all' %}">Volvamos al Inicio</a>
     </div>
-</main>
+</main> 
 {% endblock %}

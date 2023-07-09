@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import      ProductoListView,ProductoCreateView , ProductoDeleteView , ProductoUpdateView , ProductoDetailView
+from .views import ProductoListView,ProductoCreateView , ProductoDeleteView , ProductoUpdateView , ProductoDetailView
 
 from .router import router
 

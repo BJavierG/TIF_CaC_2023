@@ -3,11 +3,12 @@
 
 <main>
     <div class="main-color-productos">
-        <h1>CREAR PRODUCTO</h1>
+        <h2>Cargando producto</h2>
         <form method="post">
             {% csrf_token %}
             <div>{{form.as_p}}</div>
-            <input type="Crear Producto" value="{{ tipo }}" />
+            <br>
+            <input type="submit" value="{{ tipo }}">
         </form>
 
         <a href="{% url 'productos:all' %}">Volvamos al Inicio</a>

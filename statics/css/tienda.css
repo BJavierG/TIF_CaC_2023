@@ -18,3 +18,64 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 2rem;}
+
+/* CRUD */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+* {
+    margin: 0;
+
+    font-family: "Raleway", sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+
+    color: white;
+}
+
+/*TODO SPINNER*/
+
+/*TODO OverFLOW*/
+
+
+.main-color-productos {
+    color:  rgb(78, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-color-productos p,
+.main-color-productos a {
+    font-size: 1rem;
+    font-weight: 700;
+    color:  rgb(78, 35, 35);
+
+}
+
+.main-color-productos a:active,
+.main-color-productos a:visited,
+.main-color-productos a:link,
+.main-color-productos a:focus {
+    text-decoration: none;
+    color:  rgb(78, 35, 35);
+}
+
+.main-color-productos > .list {
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    justify-content: space-between;
+    border: 1px double  rgb(78, 35, 35);
+}

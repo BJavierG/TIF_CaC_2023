@@ -4,13 +4,10 @@
 
 <main>
     <div class="main-color-productos">
-        <h1>Todos los productos</h1>
-        <h2><a href="{% url 'productos:create' %}">CREAR PRODUCTO</a></h2>
+        <h3>Todos los productos</h1>
+        <h2><a href="{% url 'productos:create' %}">Cargar Producto</a></h2>
         {% for producto in producto_list %}
         <div class="list">
-            <span> 
-                <p>{{forloop.counter}}</p>
-            </span>
             <span>
                 <p>{{producto.articulo}}</p>
             </span>
