@@ -13,7 +13,7 @@ class ProductoBaseView():
     template_name = "productos_app.html"
     model = Producto
     fields = "__all__"
-    succes_url = reverse_lazy("productos:all")
+    success_url = reverse_lazy("productos:all")
 
 class ProductoListView(ProductoBaseView, ListView):
 
@@ -31,7 +31,7 @@ class ProductoCreateView(ProductoBaseView, CreateView):
     extra_context = {
         "tipo" : "Crear Producto"
     }
-    succes_url = reverse_lazy("productos:all")
+
 
 class ProductoUpdateView(ProductoBaseView, UpdateView):
 
@@ -39,7 +39,7 @@ class ProductoUpdateView(ProductoBaseView, UpdateView):
     extra_context = {
         "tipo" : "Actualizar Producto"
     }
-    succes_url = reverse_lazy("productos:all")
+
     
 class ProductoDeleteView(ProductoBaseView, DeleteView):
 
