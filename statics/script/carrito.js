@@ -1,5 +1,5 @@
 
-fetch('https://sheetdb.io/api/v1/v8sid17znpqza')
+// fetch('https://sheetdb.io/api/v1/v8sid17znpqza')
   .then(response => response.json()) // Parsear la respuesta como JSON
   .then(data => {
     // Aquí puedes trabajar con los datos obtenidos de la API

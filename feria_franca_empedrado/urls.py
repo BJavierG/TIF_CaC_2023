@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 from .views import Landing, Contacto, Productos, Registrarse, SobreNosotros, Tienda, Crud
 
@@ -29,4 +31,5 @@ urlpatterns = [
     path('tienda/', Tienda.as_view(), name="tienda"),
     path('crud/', Crud.as_view(), name="crud"),
     path('productos_app/', include("feria_app.urls")),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

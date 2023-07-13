@@ -7,17 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b509d92839.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/jpg" href="{% static './assets/imagenes/zapallitos.jpg' %}">
-    <link rel="stylesheet" href="{% static './css/registrarse.css'  %}">
-    <link rel="stylesheet" href="{% static './css/tienda.css'  %}">
-    <link rel="stylesheet" href="{% static './css/productos.css'  %}">
-    <link rel="stylesheet" href="{% static './css/style.css'  %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/registrarse.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/tienda.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/productos.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/style.css'  %}">
     <title>Feria Empedrado</title>
 </head>
 <header>
-    <div class="imgEncabezado" style="background-image: url('{% static '/imagenes/imagen1.jpg' %}')">
-        <h1 class="animate__animate animate__hinge">Feria Franca Empedrado</h1>
+    <div class="imgEncabezado" style="background-image: url('{% static 'imagenes/imagen1.jpg' %}')">
+        <h1>Feria Franca Empedrado</h1>
     </div>
     <nav id="navBarId">
         <div>
@@ -55,5 +53,5 @@
         <br>
         <p><b>Derechos reservados @2023</b></p>
 </footer>
-<script type="module" src="{% static './script/carrito.js'  %}"></script>
+<script type="module" src="{% static 'script/carrito.js'  %}"></script>
 </html>
